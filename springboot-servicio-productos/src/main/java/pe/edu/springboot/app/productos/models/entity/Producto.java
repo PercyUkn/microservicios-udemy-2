@@ -11,6 +11,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
+
+import org.springframework.beans.factory.annotation.Value;
 
 import lombok.Data;
 
@@ -31,6 +34,8 @@ public class Producto implements Serializable{
 	@Temporal(TemporalType.DATE)
 	private Date createdAt;
 	
+	@Transient
+	private Integer port;
 	
 	public Long getId() {
 		return id;

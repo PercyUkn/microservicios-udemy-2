@@ -1,5 +1,6 @@
 package pe.edu.springboot.app.item.models;
 
+
 import lombok.Data;
 
 @Data
@@ -8,6 +9,8 @@ public class Item {
 	private Producto producto;
 	private Integer cantidad;
 
+	private Integer port_item;
+	
 	public Item() {}
 
 	public Item(Producto producto, Integer cantidad) {
